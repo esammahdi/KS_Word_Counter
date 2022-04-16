@@ -1,0 +1,36 @@
+.TH KS 1 "2022-04-16" "V1.0" "ks man page"
+
+.SH NAME
+ks - print newline, word, and character counts for each file
+.SH SYNOPSIS
+ks [OPTION]... [FILE] | '+'...
+
+.SH DESCRIPTION
+Print newline, word, and character counts for each FILE, and a total line if
+more than one FILE is specified.  
+A word is a non-zero-length  sequence of characters delimited by white space or a LF
+newline delimiter.
+
+With no FILE or '+' character, read standard input.
+
+The  options  below may be used to select which counts are printed, al‐
+ways in the following order: newline, word,  character.
+
+.SH OPTIONS
+.IP -c
+print the character counts
+ 
+.IP -w
+print the word counts
+                        
+.IP -l
+print the newline counts
+
+.SH AUTHOR
+Written by Esameldin Mahdi
+
+.SH COPYRIGHT
+Copyright © @AUTHOR.   License : APACHE LICENSE, VERSION 2.0
+<https://www.apache.org/licenses/LICENSE-2.0.txt>.
+
+
